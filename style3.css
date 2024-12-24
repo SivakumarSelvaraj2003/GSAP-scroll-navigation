@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    z-index: 1;
+    position: fixed;
+    top: 20%;
+    right: 10%;
+}
+nav a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    color: green;
+    font-size: 2rem;
+    text-decoration: none;
+
+}
+
+nav a:not(:last-child)::after{
+    content: "";
+    background-color: aliceblue;
+    width: 1px;
+    height: 40px;
+    opacity: 0.5;
+    margin: 10px 0;
+}
+section{
+    filter: grayscale(100%);
+    height: 100vh;
+    transition: all 2s ease-in;
+}
+.one{
+    background-image: url(./wp7420966-html-css-wallpapers.jpg);
+}
+.two{
+    background-image: url(wp4325531-html-wallpapers.jpg);
+    background-size: cover;
+}
+.three{
+    background-image: url(creative-css3-tutorials-2.jpg);
+    background-size: cover;
+}
+.four{
+    background-image: url(wp12454889-javascript-logo-wallpapers.png);
+    background-size: cover;
+}
